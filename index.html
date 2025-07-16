@@ -39,7 +39,7 @@
                  onerror="this.onerror=null;this.src='https://placehold.co/750x250/111827/e0e0e0?text=Erro+ao+carregar+imagem';">
 
             <h1 class="text-4xl sm:text-5xl font-bold text-cyan-400">Balanceamento de Classes</h1>
-            <p class="text-gray-400 mt-2">Resumo de buffs e modificações para Lineage 2 Cadmus</p>
+            <p class="text-gray-400 mt-2">Resumo de buffs e modificações Lineage 2 Cadmus</p>
         </header>
 
         <!-- O conteúdo será gerado dinamicamente e inserido aqui -->
@@ -110,28 +110,56 @@
                             { name: "WARLORD / DREADNOUGHT", basicBuffs: "Auto Buffs adicionados.", classBuffs: "", skills: [
 								{ name: "Thrill Fight Lv.2", description: "Removido a penalidade de speed ao utilizar o buff.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0130.png" },
 								{ name: "War Cry Lv.1", description: "Aumentado P.Atack bonus 20% -> 25%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0078.png"},
-								{ name: "Braveheart Lv.1", description: "Aumentado a recuperação de CP de 1000 para 3000.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0440.png",},
-								{ name: "Earthquake", description: "Reduzido o tempo de reuso de 30 segundos para 15 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0347.png",}] },
+								{ name: "Braveheart Lv.1", description: "Aumentado a recuperação de CP de 1000 -> 3000.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0440.png",},
+								{ name: "Earthquake", description: "Reduzido o tempo de reuso de 30 segundos -> 15 segundos. (O Atk Speed influencia diretamente o tempo de reuso).", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0347.png",}] },
                             { name: "GLADIATOR / DUELIST", basicBuffs: "Auto Buffs adicionados.", classBuffs: "", skills: [
 								{ name: "War Cry Lv.2", description: "Aumentado P.Atack bonus 25% -> 30%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0078.png" },
-								{ name: "Triple Slash", description: "Reduzido tempo de reuso de 13 segundos para 8 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0001.png" },
-								{ name: "Braveheart Lv.1", description: "Aumentado a recuperação de CP de 1000 para 3000.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0440.png",},
-								{ name: "Sonic Barrier", description: "Reduzido o tempo para reuse em 50%, de 30 minutos para 15 minutos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0442.png",},] },
-                            { name: "PALADIN / PHOENIX KNIGHT", basicBuffs: "GREATER MIGHT(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, HASTE, FOCUS, DEATH WHISPER, WIND WALK, BERSERKER SPIRIT.", classBuffs: "", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
-                            { name: "DARK AVENGER / HELLKNIGHT", basicBuffs: "GREATER MIGHT(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, HASTE, FOCUS, DEATH WHISPER, WIND WALK, BERSERKER SPIRIT.", classBuffs: "", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
-                            { name: "TREASURE HUNTER / ADVENTURER", basicBuffs: "GREATER MIGHT(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, HASTE, FOCUS, DEATH WHISPER, WIND WALK, BERSERKER SPIRIT.", classBuffs: "", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
-                            { name: "HAWKEYE / SAGITTARIUS", basicBuffs: "GREATER MIGHT(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, HASTE, FOCUS, DEATH WHISPER, WIND WALK, BERSERKER SPIRIT.", classBuffs: "", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+								{ name: "Triple Slash", description: "Reduzido tempo de reuso de 13segundos -> 8 segundos. (O Atk Speed influencia diretamente o tempo de reuso).", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0001.png" },
+								{ name: "Braveheart Lv.1", description: "Aumentado a recuperação de CP de 1000 -> 3000.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0440.png",},
+								{ name: "Sonic Barrier", description: "Reduzido o tempo para reuso em 50%, de 30 minutos -> 15 minutos. (O Atk Speed influencia diretamente o tempo de reuso)", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0442.png",},
+                                { name: "Sonic Rage", description: "Aumentado tempo de reuso de 0 segundos -> 2 segundos. (O Atk Speed influencia diretamente o tempo de reuso)", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0345.png",}] },
+                            { name: "PALADIN / PHOENIX KNIGHT", basicBuffs: "Auto Buffs adicionados.", classBuffs: "", skills: [
+                                { name: "Tribunal", description: "Tempo de reuso da skill diminuido de 20 segundos -> 10 segundos. (O Atk Speed influencia diretamente o tempo de reuso).", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0400.png" },
+                                { name: "Iron Will", description: "Buff retrabalhado: Buffa a pt por 10 segundos, em seu level maximo dando 1500 de p/mDef.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0072.png" },
+                                { name: "Physical Mirror", description: "Adicionado novos bonus P/Mdef +200.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0350.png" }] },
+                            { name: "DARK AVENGER / HELLKNIGHT", basicBuffs: "Auto Buffs adicionados.", classBuffs: "", skills: [
+                                { name: "Judgment", description: "Tempo de reuso da skill diminuido de 20 segundos -> 10 segundos. (O Atk Speed influencia diretamente o tempo de reuso).", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0401.png" },
+                                { name: "Iron Will", description: "Buff retrabalhado: Buffa a pt por 10 segundos, em seu level maximo dando 1500 de p/mDef.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0072.png" },
+                                { name: "Physical Mirror", description: "Adicionado novos bonus P/Mdef +200.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0350.png" }] },
+                            { name: "TREASURE HUNTER / ADVENTURER", basicBuffs: "Auto Buffs adicionados.", classBuffs: "", skills: [
+                                { name: "Mirage", description: "Tempo de efeito reduzido para 30 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0445.png" },
+                                { name: "Ultimate Evasion", description: "Tempo para reuso foi reduzido em 50%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0111.png" },
+                                { name: "Trick", description: "Tempo para reuso foi aumentado em 50%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0011.png" },
+                                { name: "Switch", description: "Tempo para reuso foi aumentado em 50%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0012.png" }] },
+                            { name: "HAWKEYE / SAGITTARIUS", basicBuffs: "Auto Buffs adicionados.", classBuffs: "", skills: [
+                                { name: "Ultimate Evasion", description: "Tempo para reuso foi reduzido em 50%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0111.png" },
+                                { name: "Hawk Eye", description: "Substituido a penalidade de Pdef, por Bonus de P.atack +10% em seu level maximo.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0131.png" },
+                                { name: "Stunning Shot", description: "Tempo para reuso foi aumentado em 50%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0101.png" },
+                                { name: "Lethal Shot", description: "HitTime reduzido de 4 segundos -> 2 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0343.png" }] },
                         ]
                     },
                     {
                         typeName: "Mages",
                         textColor: "text-cyan-300",
                         classes: [
-                            { name: "SORCERER / ARCHMAGE", basicBuffs: "EMPOWER(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, ACUMEN, WILD MAGIC, CONCENTRATION, WIND WALK, BERSERKER SPIRIT.", classBuffs: "Removidos buffs RESIST FIRE, SHIELD e MIGHT.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
-                            { name: "NECROMANCER / SOULTAKER", basicBuffs: "EMPOWER(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, ACUMEN, WILD MAGIC, CONCENTRATION, WIND WALK, BERSERKER SPIRIT.", classBuffs: "Removidos buffs SHIELD e MIGHT.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
-                            { name: "WARLOCK / ARCANA LORD", basicBuffs: "EMPOWER(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, ACUMEN, WILD MAGIC, CONCENTRATION, WIND WALK, BERSERKER SPIRIT.", classBuffs: "Removidos buffs SHIELD e MIGHT.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
-                            { name: "BISHOP / CARDINAL", basicBuffs: "EMPOWER(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, ACUMEN, WILD MAGIC, CONCENTRATION, WIND WALK, BERSERKER SPIRIT.", classBuffs: "SALVATION, MENTAL SHIELD, BLOOD OF AVATAR, DARK RESISTANCE, REGENERATION agora são self-buffs. Removidos: FOCUS, KISS OF EVA, RESIST FIRE, HOLLY WEAPON.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
-                            { name: "PROPHET / HIEROPHANT", basicBuffs: "EMPOWER(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, ACUMEN, WILD MAGIC, CONCENTRATION, WIND WALK, BERSERKER SPIRIT.", classBuffs: "Resistências removidas (exceto Elemental Protection). Demais buffs viraram self-target. Profecias duram 2 min em party, sem custo de Spirit Ore.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+                            { name: "SORCERER / ARCHMAGE", basicBuffs: "Auto Buffs adicionados.", classBuffs: "Removidos buffs RESIST FIRE, SHIELD e MIGHT.", skills: [
+                                { name: "Fire Vortex", description: "Tempo para reuso foi aumentado de 6 segundos -> 10 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1339.png" },
+                                { name: "Sleep", description: "Tempo para reuso foi aumentado de 1 segundos -> 5 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1069.png" },
+                                { name: "Curse Fear", description: "Tempo para reuso aumentado em 50% e Tempo de efeito reduzido de 10 segundos -> 5 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1169.png" }] },
+                            { name: "NECROMANCER / SOULTAKER", basicBuffs: "Auto Buffs adicionados.", classBuffs: "Removidos buffs SHIELD e MIGHT.", skills: [
+                                { name: "Summon Cursed Bones", description: "Removido consumo de Spirit Ore, tempo de reuso reduzido em 70%, e aumentado quantidade de item sumonado em 10x.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1387.png" },
+                                { name: "Sleep", description: "Tempo para reuso foi aumentado de 1 segundos -> 5 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1069.png" },
+                                { name: "Summon Reanimated Man", description: "Agora é possivel sumonar sem um sacrificio.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1129.png" },
+                                { name: "Summon Corrupted Man", description: "Agora é possivel sumonar sem um sacrificio.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1154.png" },
+                                { name: "Summon Cursed Man", description: "Agora é possivel sumonar sem um sacrificio.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1334.png" },
+                                { name: "Silence", description: "Tempo de reuso aumentaado em 50%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1064.png" },
+                                { name: "Anchor", description: "Tempo de efeito reduzido de 30 segundos -> 5 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1170.png" },
+                                { name: "Curse Fear", description: "Tempo para reuso aumentado em 50% e Tempo de efeito reduzido de 10 segundos -> 5 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1169.png" },
+                                { name: "Curse of Doom", description: "Taxa de acerto reduzida para 30% e Tempo de efeito reduzido de 60 segundos -> 10 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1336.png" },
+                                { name: "Dark Vortex", description: "Tempo para reuso foi aumentado de 6 segundos -> 10 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1343.png" }] },
+                            { name: "WARLOCK / ARCANA LORD", basicBuffs: "Auto Buffs adicionados.", classBuffs: "Removidos buffs SHIELD e MIGHT.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+                            { name: "BISHOP / CARDINAL", basicBuffs: "Auto Buffs adicionados.", classBuffs: "SALVATION, MENTAL SHIELD, BLOOD OF AVATAR, DARK RESISTANCE, REGENERATION agora são self-buffs. Removidos: FOCUS, KISS OF EVA, RESIST FIRE, HOLLY WEAPON.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+                            { name: "PROPHET / HIEROPHANT", basicBuffs: "Auto Buffs adicionados.", classBuffs: "Resistências removidas (exceto Elemental Protection). Demais buffs viraram self-target. Profecias duram 2 min em party, sem custo de Spirit Ore.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
                         ]
                     }
                 ]
@@ -144,19 +172,19 @@
                         typeName: "Fighters",
                         textColor: "text-green-300",
                         classes: [
-                            { name: "TEMPLE KNIGHT / EVA'S TEMPLAR", basicBuffs: "GREATER MIGHT(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, HASTE, FOCUS, DEATH WHISPER, WIND WALK, BERSERKER SPIRIT.", classBuffs: "SPRINT BARRIER, SPRINT, ATTACK AURA e DEFENCE AURA foram trocados por novos buffs.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
-                            { name: "SWORD SINGER / SWORD MUSE", basicBuffs: "GREATER MIGHT(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, HASTE, FOCUS, DEATH WHISPER, WIND WALK, BERSERKER SPIRIT.", classBuffs: "Apenas Songs de party: EARTH, VITALITY, WARDING, HUNTER (5 min). Self Songs (20 min): RENEWAL, CHAMPION, WATER, MEDITATION.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
-                            { name: "PLAINS WALKER / WIND RIDER", basicBuffs: "GREATER MIGHT(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, HASTE, FOCUS, DEATH WHISPER, WIND WALK, BERSERKER SPIRIT.", classBuffs: "SPRINT BARRIER, SPRINT, ATTACK AURA e DEFENCE AURA foram trocados por novos buffs.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
-                            { name: "SILVER RANGER / MOONLIGHT SENTINEL", basicBuffs: "GREATER MIGHT(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, HASTE, FOCUS, DEATH WHISPER, WIND WALK, BERSERKER SPIRIT.", classBuffs: "SPRINT BARRIER, SPRINT, ATTACK AURA e DEFENCE AURA foram trocados por novos buffs.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+                            { name: "TEMPLE KNIGHT / EVA'S TEMPLAR", basicBuffs: "Auto Buffs adicionados.", classBuffs: "SPRINT BARRIER, SPRINT, ATTACK AURA e DEFENCE AURA foram trocados por novos buffs.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+                            { name: "SWORD SINGER / SWORD MUSE", basicBuffs: "Auto Buffs adicionados.", classBuffs: "Apenas Songs de party: EARTH, VITALITY, WARDING, HUNTER (5 min). Self Songs (20 min): RENEWAL, CHAMPION, WATER, MEDITATION.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+                            { name: "PLAINS WALKER / WIND RIDER", basicBuffs: "Auto Buffs adicionados.", classBuffs: "SPRINT BARRIER, SPRINT, ATTACK AURA e DEFENCE AURA foram trocados por novos buffs.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+                            { name: "SILVER RANGER / MOONLIGHT SENTINEL", basicBuffs: "Auto Buffs adicionados.", classBuffs: "SPRINT BARRIER, SPRINT, ATTACK AURA e DEFENCE AURA foram trocados por novos buffs.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
                         ]
                     },
                     {
                         typeName: "Mages",
                         textColor: "text-green-300",
                         classes: [
-                            { name: "SPELLSINGER / MYSTIC MUSE", basicBuffs: "EMPOWER(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, ACUMEN, WILD MAGIC, CONCENTRATION, WIND WALK, BERSERKER SPIRIT.", classBuffs: "Removido buff SHIELD, MIGHT e RESIST AQUA.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
-                            { name: "ELEMENTAL SUMMONER / ELEMENTAL MASTER", basicBuffs: "EMPOWER(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, ACUMEN, WILD MAGIC, CONCENTRATION, WIND WALK, BERSERKER SPIRIT.", classBuffs: "", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
-                            { name: "ELVEN ELDER / EVA'S SAINT", basicBuffs: "EMPOWER(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, ACUMEN, WILD MAGIC, CONCENTRATION, WIND WALK, BERSERKER SPIRIT.", classBuffs: "Profecia de Party dura 2 min, sem custo de Spirit Ore. Resistências e outros buffs removidos.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+                            { name: "SPELLSINGER / MYSTIC MUSE", basicBuffs: "Auto Buffs adicionados.", classBuffs: "Removido buff SHIELD, MIGHT e RESIST AQUA.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+                            { name: "ELEMENTAL SUMMONER / ELEMENTAL MASTER", basicBuffs: "Auto Buffs adicionados.", classBuffs: "", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+                            { name: "ELVEN ELDER / EVA'S SAINT", basicBuffs: "Auto Buffs adicionados.", classBuffs: "Profecia de Party dura 2 min, sem custo de Spirit Ore. Resistências e outros buffs removidos.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
                         ]
                     }
                 ]
@@ -169,19 +197,19 @@
                         typeName: "Fighters",
                         textColor: "text-purple-300",
                         classes: [
-                            { name: "SHILLIEN KNIGHT / SHILLIEN TEMPLAR", basicBuffs: "GREATER MIGHT(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, HASTE, FOCUS, DEATH WHISPER, WIND WALK, BERSERKER SPIRIT.", classBuffs: "SPRINT BARRIER, SPRINT, ATTACK AURA e DEFENCE AURA foram trocados por novos buffs.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
-                            { name: "BLADEDANCER / SPECTRAL DANCER", basicBuffs: "GREATER MIGHT(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, HASTE, FOCUS, DEATH WHISPER, WIND WALK, BERSERKER SPIRIT.", classBuffs: "Dances de party (5 min): WARRIOR, FURY, MYSTIC, CONCENTRATION. Removidos: LIGHT, AQUA GUARD, EARTH. Demais dances viraram self (20 min).", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
-                            { name: "ABYSS WALKER / GHOST SENTINEL", basicBuffs: "GREATER MIGHT(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, HASTE, FOCUS, DEATH WHISPER, WIND WALK, BERSERKER SPIRIT.", classBuffs: "SPRINT BARRIER, SPRINT, ATTACK AURA e DEFENCE AURA foram trocados por novos buffs.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
-                            { name: "PHANTOM RANGER / GHOST HUNTER", basicBuffs: "GREATER MIGHT(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, HASTE, FOCUS, DEATH WHISPER, WIND WALK, BERSERKER SPIRIT.", classBuffs: "SPRINT BARRIER, SPRINT, ATTACK AURA e DEFENCE AURA foram trocados por novos buffs.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+                            { name: "SHILLIEN KNIGHT / SHILLIEN TEMPLAR", basicBuffs: "Auto Buffs adicionados.", classBuffs: "SPRINT BARRIER, SPRINT, ATTACK AURA e DEFENCE AURA foram trocados por novos buffs.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+                            { name: "BLADEDANCER / SPECTRAL DANCER", basicBuffs: "Auto Buffs adicionados.", classBuffs: "Dances de party (5 min): WARRIOR, FURY, MYSTIC, CONCENTRATION. Removidos: LIGHT, AQUA GUARD, EARTH. Demais dances viraram self (20 min).", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+                            { name: "ABYSS WALKER / GHOST SENTINEL", basicBuffs: "Auto Buffs adicionados.", classBuffs: "SPRINT BARRIER, SPRINT, ATTACK AURA e DEFENCE AURA foram trocados por novos buffs.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+                            { name: "PHANTOM RANGER / GHOST HUNTER", basicBuffs: "Auto Buffs adicionados.", classBuffs: "SPRINT BARRIER, SPRINT, ATTACK AURA e DEFENCE AURA foram trocados por novos buffs.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
                         ]
                     },
                     {
                         typeName: "Mages",
                         textColor: "text-purple-300",
                         classes: [
-                            { name: "SPELLHOWLER / STORM SCREAMER", basicBuffs: "EMPOWER(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, ACUMEN, WILD MAGIC, CONCENTRATION, WIND WALK, BERSERKER SPIRIT.", classBuffs: "", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
-                            { name: "PHANTOM SUMMONER / SPECTRAL MASTER", basicBuffs: "EMPOWER(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, ACUMEN, WILD MAGIC, CONCENTRATION, WIND WALK, BERSERKER SPIRIT.", classBuffs: "", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
-                            { name: "SHILLIEN ELDER / SHILLIEN SAINT", basicBuffs: "EMPOWER(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, ACUMEN, WILD MAGIC, CONCENTRATION, WIND WALK, BERSERKER SPIRIT.", classBuffs: "Removidos: GUIDANCE, SHIELD, MIGHT, RESIST WIND, FOCUS, KISS OF EVA, ARCANE PROTECTION. Profecia de Party dura 2 min, sem custo de Spirit Ore.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+                            { name: "SPELLHOWLER / STORM SCREAMER", basicBuffs: "Auto Buffs adicionados.", classBuffs: "", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+                            { name: "PHANTOM SUMMONER / SPECTRAL MASTER", basicBuffs: "Auto Buffs adicionados.", classBuffs: "", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+                            { name: "SHILLIEN ELDER / SHILLIEN SAINT", basicBuffs: "Auto Buffs adicionados.", classBuffs: "Removidos: GUIDANCE, SHIELD, MIGHT, RESIST WIND, FOCUS, KISS OF EVA, ARCANE PROTECTION. Profecia de Party dura 2 min, sem custo de Spirit Ore.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
                         ]
                     }
                 ]
@@ -194,16 +222,16 @@
                         typeName: "Fighters",
                         textColor: "text-red-300",
                         classes: [
-                            { name: "DESTROYER / TITAN", basicBuffs: "GREATER MIGHT(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, HASTE, FOCUS, DEATH WHISPER, WIND WALK, BERSERKER SPIRIT.", classBuffs: "", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
-                            { name: "TYRANT / GRAND KHAVATARI", basicBuffs: "GREATER MIGHT(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, HASTE, FOCUS, DEATH WHISPER, WIND WALK, BERSERKER SPIRIT.", classBuffs: "", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+                            { name: "DESTROYER / TITAN", basicBuffs: "Auto Buffs adicionados.", classBuffs: "", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+                            { name: "TYRANT / GRAND KHAVATARI", basicBuffs: "Auto Buffs adicionados.", classBuffs: "", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
                         ]
                     },
                     {
                         typeName: "Mages",
                         textColor: "text-red-300",
                         classes: [
-                            { name: "OVERLORD / DOMINATOR", basicBuffs: "EMPOWER(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, ACUMEN, WILD MAGIC, CONCENTRATION, WIND WALK, BERSERKER SPIRIT.", classBuffs: "Buffs de classe modificados para novos auto-buffs.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
-                            { name: "WARCRYER / DOOMCRYER", basicBuffs: "EMPOWER(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, ACUMEN, WILD MAGIC, CONCENTRATION, WIND WALK, BERSERKER SPIRIT.", classBuffs: "Buffs de classe trocados por auto-buffs. CHANT OF VICTORY e MAGNUS CHANT duram 2 min, sem custo de Spirit Ore.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+                            { name: "OVERLORD / DOMINATOR", basicBuffs: "Auto Buffs adicionados.", classBuffs: "Buffs de classe modificados para novos auto-buffs.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+                            { name: "WARCRYER / DOOMCRYER", basicBuffs: "Auto Buffs adicionados.", classBuffs: "Buffs de classe trocados por auto-buffs. CHANT OF VICTORY e MAGNUS CHANT duram 2 min, sem custo de Spirit Ore.", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
                         ]
                     }
                 ]
@@ -216,8 +244,8 @@
                         typeName: "Fighters",
                         textColor: "text-orange-300",
                         classes: [
-                            { name: "BOUNTY HUNTER / FORTUNE SEEKER", basicBuffs: "GREATER MIGHT(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, HASTE, FOCUS, DEATH WHISPER, WIND WALK, BERSERKER SPIRIT.", classBuffs: "", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
-                            { name: "WARSMITH / MAESTRO", basicBuffs: "GREATER MIGHT(P), GREATER SHIELD(P), MAGIC BARRIER(P), CLARITY(P), BLESSED SOUL(P), BLESSED BODY, HASTE, FOCUS, DEATH WHISPER, WIND WALK, BERSERKER SPIRIT.", classBuffs: "", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+                            { name: "BOUNTY HUNTER / FORTUNE SEEKER", basicBuffs: "Auto Buffs adicionados.", classBuffs: "", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
+                            { name: "WARSMITH / MAESTRO", basicBuffs: "Auto Buffs adicionados.", classBuffs: "", skills: [{ name: "Nome da Skill", description: "Descreva a mudança aqui...", iconUrl: "" }] },
                         ]
                     }
                 ]
