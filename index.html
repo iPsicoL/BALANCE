@@ -45,6 +45,11 @@
 
         <main id="class-container" class="flex flex-col gap-12"></main>
 
+        <footer class="mt-12 pt-8 border-t border-gray-700 text-center text-gray-500">
+            <p>&copy; <span id="current-year"></span> Lineage 2 Cadmus. Todos os direitos reservados.</p>
+            <a href="#" class="mt-2 inline-block text-cyan-500 hover:text-cyan-300 transition-colors">Voltar ao Topo</a>
+        </footer>
+
     </div>
 
     <script>
@@ -369,7 +374,10 @@
             container.innerHTML = content;
         }
 
-        document.addEventListener('DOMContentLoaded', generateContent);
+        document.addEventListener('DOMContentLoaded', () => {
+            generateContent();
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        });
     </script>
 
 </body>
