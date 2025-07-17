@@ -182,13 +182,13 @@
                             { name: "BISHOP / CARDINAL", basicBuffs: "Auto buffs adicionados.", classBuffs: "SALVATION, MENTAL SHIELD, BLOOD OF AVATAR, DARK RESISTANCE, REGENERATION agora são self-buffs. Removidos: FOCUS, KISS OF EVA, RESIST FIRE, HOLLY WEAPON.", skills: [
 								{ name: "Might of Heaven", description: "Habilitado dano em todos os tipos de monstros, não apenas em mortos-vivos (undead).", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1028.png" },
 								{ name: "Celestial Shield", description: "Buff alterado para alvo próprio (self-target), tempo de reuso reduzido em 50%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1418.png" },
-								{ name: "Arcane Wisdom", description: "Removida penalidade de Casting Speed, adicionado bônus de P.Def/M.Def +5%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0336.png" }] 
+								{ name: "Arcane Wisdom", description: "Removida penalidade de Casting Spd, adicionado bônus de P.Def/M.Def +5%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0336.png" }] 
                             },
                             { name: "PROPHET / HIEROPHANT", basicBuffs: "Auto buffs adicionados.", classBuffs: "Resistências removidas (exceto Elemental Protection). Demais buffs viraram self-target.", skills: [
 							    { name: "Might of Heaven", description: "Nova habilidade adicionada (Lv. 40 -> 74), habilitado dano em todos os tipos de monstros, não apenas em mortos-vivos (undead).", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1028.png" },
 							    { name: "Fatal Strike", description: "Nova habilidade adicionada (Lv. 40 -> 74).", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0190.png" },
 							    { name: "Prophecy of Fire", description: "Tempo de efeito reduzido para 2 minutos, consumo de Spirit Ore removido.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1356.png" },
-							    { name: "Arcane Wisdom", description: "Removida penalidade de Casting Speed, adicionado bônus de P.Def/M.Def +5%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0336.png" }] 
+							    { name: "Arcane Wisdom", description: "Removida penalidade de Casting Spd, adicionado bônus de P.Def/M.Def +5%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0336.png" }] 
                             },
                         ]
                     }
@@ -230,9 +230,18 @@
                         typeName: "Mages",
                         textColor: "text-green-300",
                         classes: [
-                            { name: "SPELLSINGER / MYSTIC MUSE", basicBuffs: "Auto buffs adicionados.", classBuffs: "Removido buff SHIELD, MIGHT e RESIST AQUA.", skills: [] },
-                            { name: "ELEMENTAL SUMMONER / ELEMENTAL MASTER", basicBuffs: "Auto buffs adicionados.", classBuffs: "", skills: [] },
-                            { name: "ELVEN ELDER / EVA'S SAINT", basicBuffs: "Auto buffs adicionados.", classBuffs: "Profecia de Party dura 2 min, sem custo de Spirit Ore. Resistências e outros buffs removidos.", skills: [] },
+                            { name: "SPELLSINGER / MYSTIC MUSE", basicBuffs: "Auto buffs adicionados.", classBuffs: "Removido buff SHIELD, MIGHT e RESIST AQUA.", skills: [
+								{ name: "Sleep", description: "Tempo de reuso aumentado de 1 para 5 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1069.png" },
+								{ name: "Curse Fear", description: "Tempo de reuso aumentado em 50% e tempo de efeito reduzido de 10 para 5 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1169.png" },
+								{ name: "Ice Vortex", description: "Tempo de reuso aumentado de 6 para 10 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1340.png" },
+								{ name: "Light Vortex", description: "Tempo de reuso aumentado de 6 para 10 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1342.png" }] },
+                            { name: "ELEMENTAL SUMMONER / ELEMENTAL MASTER", basicBuffs: "Auto buffs adicionados.", classBuffs: "", skills: [
+								{ name: "Aqua Swirl", description: "Novos níveis adicionados e poder aumentado (Lv. 40 -> 74, similar a Hydro Blast).", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1175.png" },
+								{ name: "Servitor Empowerment", description: "Tempo de reuso reduzido em 50%, efeito de aprisionamento do pet removido, tempo de efeito diminuído de 30 para 15 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1299.png" }] },
+                            { name: "ELVEN ELDER / EVA'S SAINT", basicBuffs: "Auto buffs adicionados.", classBuffs: "Profecia de Party dura 2 min, sem custo de Spirit Ore. Resistências e outros buffs removidos.", skills: [
+								{ name: "Might of Heaven", description: "Habilitado dano em todos os tipos de monstros, não apenas em mortos-vivos (undead).", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1028.png" },
+								{ name: "Prophecy of Water", description: "Tempo de efeito reduzido para 2 minutos, consumo de Spirit Ore removido.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1355.png" },
+								{ name: "Arcane Wisdom", description: "Removida penalidade de Casting Spd, adicionado bônus de P.Def/M.Def +5%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0336.png" }] },
                         ]
                     }
                 ]
@@ -245,19 +254,43 @@
                         typeName: "Fighters",
                         textColor: "text-purple-300",
                         classes: [
-                            { name: "SHILLIEN KNIGHT / SHILLIEN TEMPLAR", basicBuffs: "Auto buffs adicionados.", classBuffs: "SPRINT BARRIER, SPRINT, ATTACK AURA e DEFENCE AURA foram trocados por novos buffs.", skills: [] },
-                            { name: "BLADEDANCER / SPECTRAL DANCER", basicBuffs: "Auto buffs adicionados.", classBuffs: "Dances de party (5 min): WARRIOR, FURY, MYSTIC, CONCENTRATION. Removidos: LIGHT, AQUA GUARD, EARTH. Demais dances viraram self (20 min).", skills: [] },
-                            { name: "ABYSS WALKER / GHOST SENTINEL", basicBuffs: "Auto buffs adicionados.", classBuffs: "SPRINT BARRIER, SPRINT, ATTACK AURA e DEFENCE AURA foram trocados por novos buffs.", skills: [] },
-                            { name: "PHANTOM RANGER / GHOST HUNTER", basicBuffs: "Auto buffs adicionados.", classBuffs: "SPRINT BARRIER, SPRINT, ATTACK AURA e DEFENCE AURA foram trocados por novos buffs.", skills: [] },
+                            { name: "SHILLIEN KNIGHT / SHILLIEN TEMPLAR", basicBuffs: "Auto buffs adicionados.", classBuffs: "SPRINT BARRIER, SPRINT, ATTACK AURA e DEFENCE AURA foram trocados por novos buffs.", skills: [
+								{ name: "Judgment", description: "Tempo de reuso da skill diminuído de 20 para 10 segundos. (Atk. Spd. influencia o reuso).", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0401.png" },
+								{ name: "Magical Mirror", description: "Adicionado novo bônus de P.Def/M.Def +200.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0351.png" },
+								{ name: "Touch of Death", description: "Tempo para reuso foi reduzido em 50%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0342.png" }] },
+                            { name: "BLADEDANCER / SPECTRAL DANCER", basicBuffs: "Auto buffs adicionados.", classBuffs: "Dances de party (5 min): WARRIOR, FURY, MYSTIC, CONCENTRATION. Removidos: LIGHT, AQUA GUARD, EARTH.", skills: [
+								{ name: "Dance of Inspiration", description: "Agora é uma habilidade passiva.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0272.png" },
+                                { name: "Dance of Fire", description: "Agora é uma habilidade passiva.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0274.png" },
+                                { name: "Dance of the Vampire", description: "Agora é uma habilidade passiva.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0310.png" },
+                                { name: "Dance of Protection", description: "Agora é uma habilidade passiva.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0311.png" }] },
+                            { name: "ABYSS WALKER / GHOST SENTINEL", basicBuffs: "Auto buffs adicionados.", classBuffs: "SPRINT BARRIER, SPRINT, ATTACK AURA e DEFENCE AURA foram trocados por novos buffs.", skills: [
+								{ name: "Ultimate Evasion", description: "Tempo de reuso reduzido em 50%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0111.png" },
+								{ name: "Trick", description: "Tempo de reuso aumentado em 50%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0011.png" },
+								{ name: "Counterattack", description: "Tempo de efeito aumentado de 10 para 15 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0447.png" }] },
+                            { name: "PHANTOM RANGER / GHOST HUNTER", basicBuffs: "Auto buffs adicionados.", classBuffs: "SPRINT BARRIER, SPRINT, ATTACK AURA e DEFENCE AURA foram trocados por novos buffs.", skills: [
+								{ name: "Ultimate Evasion", description: "Tempo de reuso reduzido em 50%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0111.png" },
+								{ name: "Stunning Shot", description: "Tempo de reuso aumentado em 50%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0101.png" },
+								{ name: "Lethal Shot", description: "Tempo de conjuração reduzido de 4 para 2 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0343.png" },
+								{ name: "Dead Eye", description: "Removido penalidade de Atk Spd.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0414.png" }] },
                         ]
                     },
                     {
                         typeName: "Mages",
                         textColor: "text-purple-300",
                         classes: [
-                            { name: "SPELLHOWLER / STORM SCREAMER", basicBuffs: "Auto buffs adicionados.", classBuffs: "", skills: [] },
-                            { name: "PHANTOM SUMMONER / SPECTRAL MASTER", basicBuffs: "Auto buffs adicionados.", classBuffs: "", skills: [] },
-                            { name: "SHILLIEN ELDER / SHILLIEN SAINT", basicBuffs: "Auto buffs adicionados.", classBuffs: "Removidos: GUIDANCE, SHIELD, MIGHT, RESIST WIND, FOCUS, KISS OF EVA, ARCANE PROTECTION. Profecia de Party dura 2 min, sem custo de Spirit Ore.", skills: [] },
+                            { name: "SPELLHOWLER / STORM SCREAMER", basicBuffs: "Auto buffs adicionados.", classBuffs: "", skills: [
+								{ name: "Sleep", description: "Tempo de reuso aumentado de 1 para 5 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1069.png" },
+								{ name: "Silence", description: "Tempo de reuso aumentado em 50%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1064.png" },
+                                { name: "Curse Fear", description: "Tempo de reuso aumentado em 50% e tempo de efeito reduzido de 10 para 5 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1169.png" },
+								{ name: "Wind Vortex", description: "Tempo de reuso aumentado de 6 para 10 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1341.png" },
+								{ name: "Dark Vortex", description: "Tempo de reuso aumentado de 6 para 10 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1343.png" }] },
+                            { name: "PHANTOM SUMMONER / SPECTRAL MASTER", basicBuffs: "Auto buffs adicionados.", classBuffs: "", skills: [
+								{ name: "Twister", description: "Novos níveis adicionados e poder aumentado (Lv. 40 -> 74, similar a Prominence).", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1178.png" },
+								{ name: "Servitor Empowerment", description: "Tempo de reuso reduzido em 50%, efeito de aprisionamento do pet removido, tempo de efeito diminuído de 30 para 15 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1299.png" }] },
+                            { name: "SHILLIEN ELDER / SHILLIEN SAINT", basicBuffs: "Auto buffs adicionados.", classBuffs: "Removidos: GUIDANCE, SHIELD, MIGHT, RESIST WIND, FOCUS, KISS OF EVA, ARCANE PROTECTION. Profecia de Party dura 2 min, sem custo de Spirit Ore.", skills: [
+								{ name: "Might of Heaven", description: "Nova habilidade adicionada (Lv. 40 -> 74), habilitado dano em todos os tipos de monstros, não apenas em mortos-vivos (undead).", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1028.png" },
+								{ name: "Prophecy of Wind", description: "Tempo de efeito reduzido para 2 minutos, consumo de Spirit Ore removido, novos bonus Casting Spd +10% e M.Atk +20%", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1357.png" },
+								{ name: "Arcane Wisdom", description: "Removida penalidade de Casting Spd, adicionado bônus de P.Def/M.Def +5%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0336.png" }] },
                         ]
                     }
                 ]
