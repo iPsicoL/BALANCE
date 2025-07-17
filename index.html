@@ -27,6 +27,13 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #6b7280; /* bg-gray-500 */
         }
+        html {
+            scroll-behavior: smooth;
+        }
+        /* O menu dropdown será controlado por JS */
+        #back-to-top-btn {
+            transition: opacity 0.3s, visibility 0.3s;
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-200">
@@ -43,6 +50,8 @@
             <p id="main-subtitle" class="text-gray-400 mt-2">Resumo de buffs e modificações para Lineage 2 Cadmus</p>
         </header>
 
+        <nav id="main-nav" class="sticky top-4 z-50 mb-10 text-center"></nav>
+
         <main id="class-container" class="flex flex-col gap-12"></main>
 
         <footer class="mt-12 pt-8 border-t border-gray-700 text-center text-gray-500">
@@ -52,12 +61,20 @@
 
     </div>
 
+    <button id="back-to-top-btn" class="hidden fixed bottom-5 right-5 bg-gray-700 hover:bg-cyan-500 text-white p-3 rounded-full shadow-lg focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+
     <script>
         // --- INÍCIO DA ÁREA DE DADOS ---
         const racesData = [
             {
                 raceName: "Adição de Auto Buffs",
                 borderColor: "border-cyan-500",
+                raceImage: "", // Sem imagem para esta seção geral
                 classTypes: [
                     {
                         typeName: "Lista de Auto Buffs Adicionados a Todos os Fighters",
@@ -92,7 +109,7 @@
                                 basicBuffs: "Foram adicionados os seguintes buffs em todas as classes de magos:", 
                                 classBuffs: "", 
                                 skills: [
-                                    { name: "GREATER EMPOWER", description: "Lv. 1 +5% M.Atk; Lv. 2 +10% M.Atk; Lv. 3 +15% M.Atk", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1059.png" },
+                                    { name: "EMPOWER", description: "Lv. 1 +5% M.Atk; Lv. 2 +10% M.Atk; Lv. 3 +15% M.Atk", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1059.png" },
                                     { name: "GREATER SHIELD", description: "Lv. 1 +10% P.Def; Lv. 2 +15% P.Def; Lv. 3 +20% P.Def", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1389.png" },
                                     { name: "MAGIC BARRIER", description: "Lv. 1 +25% M.Def; Lv. 2 +30% M.Def", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1036.png" },
                                     { name: "CLARITY", description: "Lv. 1 Regeneração de MP +3%; Lv. 2 Regeneração de MP +5%; Lv. 3 Regeneração de MP +7%", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill1397.png" },
@@ -112,6 +129,7 @@
             {
                 raceName: "Modificações de Classes: Humanos",
                 borderColor: "border-cyan-500",
+                raceImage: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/backgrounds/skills_human.png",
                 classTypes: [
                     {
                         typeName: "Fighters",
@@ -195,8 +213,9 @@
                 ]
             },
             {
-                raceName: "Modificações de Classes: Elfos da Luz",
+                raceName: "Modificações de Classes: Elfos",
                 borderColor: "border-green-500",
+                raceImage: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/backgrounds/skills_elf.png",
                 classTypes: [
                     {
                         typeName: "Fighters",
@@ -249,6 +268,7 @@
             {
                 raceName: "Modificações de Classes: Elfos Negros",
                 borderColor: "border-purple-500",
+                raceImage: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/backgrounds/skills_dark_elf.png",
                 classTypes: [
                     {
                         typeName: "Fighters",
@@ -263,11 +283,11 @@
                                 { name: "Dance of Fire", description: "Agora é uma habilidade passiva.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0274.png" },
                                 { name: "Dance of the Vampire", description: "Agora é uma habilidade passiva.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0310.png" },
                                 { name: "Dance of Protection", description: "Agora é uma habilidade passiva.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0311.png" }] },
-                            { name: "ABYSS WALKER / GHOST SENTINEL", basicBuffs: "Auto buffs adicionados.", classBuffs: "SPRINT BARRIER, SPRINT, ATTACK AURA e DEFENCE AURA foram trocados por novos buffs.", skills: [
+                            { name: "ABYSS WALKER / GHOST HUNTER", basicBuffs: "Auto buffs adicionados.", classBuffs: "SPRINT BARRIER, SPRINT, ATTACK AURA e DEFENCE AURA foram trocados por novos buffs.", skills: [
 								{ name: "Ultimate Evasion", description: "Tempo de reuso reduzido em 50%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0111.png" },
 								{ name: "Trick", description: "Tempo de reuso aumentado em 50%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0011.png" },
 								{ name: "Counterattack", description: "Tempo de efeito aumentado de 10 para 15 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0447.png" }] },
-                            { name: "PHANTOM RANGER / GHOST HUNTER", basicBuffs: "Auto buffs adicionados.", classBuffs: "SPRINT BARRIER, SPRINT, ATTACK AURA e DEFENCE AURA foram trocados por novos buffs.", skills: [
+                            { name: "PHANTOM RANGER / GHOST SENTINEL", basicBuffs: "Auto buffs adicionados.", classBuffs: "SPRINT BARRIER, SPRINT, ATTACK AURA e DEFENCE AURA foram trocados por novos buffs.", skills: [
 								{ name: "Ultimate Evasion", description: "Tempo de reuso reduzido em 50%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0111.png" },
 								{ name: "Stunning Shot", description: "Tempo de reuso aumentado em 50%.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0101.png" },
 								{ name: "Lethal Shot", description: "Tempo de conjuração reduzido de 4 para 2 segundos.", iconUrl: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/skill_icons/skill0343.png" },
@@ -298,6 +318,7 @@
             {
                 raceName: "Modificações de Classes: Orcs",
                 borderColor: "border-red-500",
+                raceImage: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/backgrounds/skills_orc.png",
                 classTypes: [
                     {
                         typeName: "Fighters",
@@ -320,6 +341,7 @@
             {
                 raceName: "Modificações de Classes: Anões",
                 borderColor: "border-orange-500",
+                raceImage: "https://lineage2wiki.org/wp-content/themes/wiki_theme/images/backgrounds/skills_dwarf.png",
                 classTypes: [
                     {
                         typeName: "Fighters",
@@ -334,6 +356,51 @@
         ];
         // --- FIM DA ÁREA DE DADOS ---
 
+        function generateMenu() {
+            const nav = document.getElementById('main-nav');
+            if (!nav) return;
+
+            let menuContent = '<div class="inline-flex flex-wrap justify-center items-center gap-4 bg-gray-800 p-2 rounded-lg shadow-lg">';
+
+            racesData.forEach(race => {
+                if (race.raceName === "Adição de Auto Buffs") return;
+
+                menuContent += `
+                    <div class="relative dropdown">
+                        <button class="dropdown-toggle text-white hover:text-cyan-300 transition-colors px-3 py-2">${race.raceName.replace('Modificações de Classes: ', '')}</button>
+                        <div class="dropdown-menu absolute hidden bg-gray-700 rounded-md mt-2 shadow-lg w-60 z-20">
+                `;
+                
+                race.classTypes.forEach(type => {
+                    menuContent += `<div class="px-4 py-2 text-xs uppercase font-bold text-gray-400">${type.typeName}</div>`;
+                    type.classes.forEach(cls => {
+                        const classId = cls.name.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase();
+                        menuContent += `<a href="#${classId}" class="block px-4 py-2 text-sm text-gray-200 hover:bg-cyan-500 hover:text-white">${cls.name}</a>`;
+                    });
+                });
+
+                menuContent += '</div></div>';
+            });
+
+            menuContent += '</div>';
+            nav.innerHTML = menuContent;
+
+            // Adiciona os event listeners para os dropdowns
+            document.querySelectorAll('.dropdown-toggle').forEach(button => {
+                button.addEventListener('click', (event) => {
+                    event.stopPropagation();
+                    const menu = button.nextElementSibling;
+                    // Fecha outros menus abertos
+                    document.querySelectorAll('.dropdown-menu').forEach(m => {
+                        if (m !== menu) {
+                            m.classList.add('hidden');
+                        }
+                    });
+                    menu.classList.toggle('hidden');
+                });
+            });
+        }
+
         function generateContent() {
             const container = document.getElementById('class-container');
             if (!container) return;
@@ -342,8 +409,11 @@
 
             racesData.forEach(race => {
                 content += `
-                    <div>
-                        <h2 class="text-3xl font-bold border-b-2 ${race.borderColor} pb-2 mb-6">${race.raceName}</h2>
+                    <div id="${race.raceName.toLowerCase().replace(/[^a-z0-9]/g, '-')}">
+                        <div class="flex items-center mb-6">
+                            ${race.raceImage ? `<img src="${race.raceImage}" alt="${race.raceName}" class="w-24 h-auto mr-6 rounded-md">` : ''}
+                            <h2 class="text-3xl font-bold border-b-2 ${race.borderColor} pb-2 flex-grow">${race.raceName}</h2>
+                        </div>
                 `;
 
                 race.classTypes.forEach(type => {
@@ -354,6 +424,7 @@
                     `;
 
                     type.classes.forEach(cls => {
+                        const classId = cls.name.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase();
                         let skillsTableRows = '';
                         if (cls.skills && cls.skills.length > 0) {
                             cls.skills.forEach(skill => {
@@ -374,7 +445,7 @@
                         }
                         
                         content += `
-                            <div class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
+                            <div id="${classId}" class="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700">
                                 <h4 class="text-xl font-bold text-white">${cls.name}</h4>
                                 <div class="mt-4">
                                     <strong class="text-gray-400">Buffs Básicos:</strong>
@@ -416,7 +487,29 @@
 
         document.addEventListener('DOMContentLoaded', () => {
             generateContent();
+            generateMenu();
             document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            const backToTopBtn = document.getElementById('back-to-top-btn');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTopBtn.classList.remove('hidden');
+                } else {
+                    backToTopBtn.classList.add('hidden');
+                }
+            });
+
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // Fecha os menus dropdown se clicar fora deles
+            window.addEventListener('click', () => {
+                document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                    menu.classList.add('hidden');
+                });
+            });
         });
     </script>
 
