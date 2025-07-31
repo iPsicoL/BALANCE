@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Servidor de Lineage 2 - A Nova Ordem</title>
+    <meta name="description" content="Junte-se ao nosso servidor de Lineage 2. Uma nova era tática com crônicas High Five, rates balanceadas e batalhas estratégicas.">
+    
+    <!-- Google Fonts: Oswald para um visual forte e Montserrat para legibilidade -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Ícones (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Folha de Estilos CSS (verifique se o caminho e nome estão corretos) -->
+    <link rel="stylesheet" href="css/style-v2.css">
+</head>
+<body>
+
+    <!-- Efeito de partículas no fundo -->
+    <div id="particles-js"></div>
+
+    <!-- CABEÇALHO COM LOGO CENTRAL E MENU HAMBÚRGUER -->
+    <header class="main-header">
+        <div class="container">
+            <a href="index-v2.html" class="central-logo">
+                <img src="imagens/logo.png" alt="Logo do Servidor">
+            </a>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- MENU OVERLAY SUSPENSO -->
+    <nav class="fullscreen-nav" id="fullscreen-nav">
+        <div class="close-menu" id="close-menu">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#media">Mídia</a></li>
+            <li><a href="#">Cadastro</a></li>
+            <li><a href="#">Downloads</a></li>
+            <li><a href="#">Fórum</a></li>
+            <li><a href="#" class="nav-button donate-button">Doações</a></li>
+            <li><a href="#" class="nav-button login-button">Login</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Seção Principal (Hero) -->
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <h1 class="server-title"></h1>
+                <p class="server-subtitle">A ESTRATÉGIA DEFINE O VENCEDOR. O CAMPO DE BATALHA ESPERA.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary"><i class="fas fa-user-plus"></i> Criar Conta Agora</a>
+                    <a href="#" class="btn btn-secondary"><i class="fas fa-download"></i> Fazer Download</a>
+                </div>
+            </div>
+            <div class="server-stats">
+                <div class="stat-item">
+                    <span class="label">Status do Servidor</span>
+                    <span class="value online"><i class="fas fa-server"></i> Online</span>
+                </div>
+                <div class="stat-item">
+                    <span class="label">Jogadores Online</span>
+                    <span id="players-online" class="value"><i class="fas fa-users"></i> 1,257</span>
+                </div>
+                <div class="stat-item">
+                    <span class="label">Crônica</span>
+                    <span class="value">Improved Interlude</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Informações do Servidor -->
+        <section class="server-info" id="sobre">
+            <div class="container">
+                <h2 class="section-title"><span>Por que lutar em nosso reino?</span></h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="icon"><i class="fas fa-fist-raised"></i></div>
+                        <h3>Rates Balanceadas</h3>
+                        <p>XP: 50x | SP: 50x | Adena: 25x. Uma progressão desafiadora, mas recompensadora.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon"><i class="fas fa-shield-halved"></i></div>
+                        <h3>PvP Intenso</h3>
+                        <p>Foco total em GvG, Sieges e PvP de mundo aberto. Prepare-se para a batalha!</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon"><i class="fas fa-gem"></i></div>
+                        <h3>Sem Itens Custom</h3>
+                        <p>Experiência clássica e autêntica. Sua habilidade é o que define sua força.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon"><i class="fas fa-ban"></i></div>
+                        <h3>Proteção Anti-Bot</h3>
+                        <p>Sistema de segurança robusto para garantir um jogo justo e livre de trapaças.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Vídeos e Streams -->
+        <section class="media-section" id="media">
+            <div class="container">
+                <h2 class="section-title"><span>Ação ao Vivo</span></h2>
+                <div class="media-grid">
+                    <div class="featured-video">
+                        <div class="video-wrapper">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLiF_a-i00AcaL6iIu_pajU3S-2s_2w2Yl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="stream-list">
+                        <a href="#" class="stream-item">
+                            <img src="https://placehold.co/120x70/556B2F/ffffff?text=Streamer+1" alt="Streamer 1">
+                            <div class="stream-info">
+                                <h4>StreamerTatico</h4>
+                                <p>Giran Castle Siege - AO VIVO</p>
+                                <span class="live-indicator">● AO VIVO</span>
+                            </div>
+                        </a>
+                        <a href="#" class="stream-item">
+                            <img src="https://placehold.co/120x70/2C3539/ffffff?text=VOD" alt="Video on Demand">
+                            <div class="stream-info">
+                                <h4>Top 10 Kills da Semana</h4>
+                                <p>Compilação de PvP</p>
+                            </div>
+                        </a>
+                        <a href="#" class="stream-item">
+                            <img src="https://placehold.co/120x70/2C3539/ffffff?text=VOD" alt="Video on Demand">
+                            <div class="stream-info">
+                                <h4>Guia de Spoil - Tower of Insolence</h4>
+                                <p>Por L2Strategist</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 NOME DO SERVIDOR. Todos os direitos reservados.</p>
+            <p>Lineage II e todas as marcas relacionadas são propriedade da NCSoft.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts (verifique se o caminho e nome estão corretos) -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/script-v2.js"></script>
+</body>
+</html>
